@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axiosConfig from '../util/axiosConfig';
 import { API_ENDPOINTS } from '../util/apiEndpoints';
 
-const UseUser = () => {
+const useUser = () => {
     const {user,setUser,clearUser}=useContext(AppContext);
     const navigate = useNavigate();
 
@@ -42,4 +42,4 @@ const UseUser = () => {
   
 }
 
-export default UseUser;
+export default useUser;

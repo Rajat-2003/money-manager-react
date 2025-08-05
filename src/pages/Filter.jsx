@@ -1,5 +1,5 @@
 import Dashboard from "../components/Dashboard.jsx";
-import useUser from "../hooks/useUser.jsx";
+import UseUser from "../hooks/UseUser.jsx";
 import { Search } from "lucide-react";
 import { useState } from "react";
 import axiosConfig from "../util/axiosConfig.js";
@@ -9,7 +9,7 @@ import TransactionInfoCard from "../components/TransactionInfoCard.jsx";
 import moment from "moment";
 
 const Filter = () => {
-  useUser();
+  UseUser();
   const [type, setType] = useState("income");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");

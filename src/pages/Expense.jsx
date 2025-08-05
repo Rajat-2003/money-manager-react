@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import useUser from "../hooks/useUser";
+import UseUser from "../hooks/UseUser.jsx";
 import axiosConfig from "../util/axiosConfig.js";
 import {API_ENDPOINTS} from "../util/apiEndpoints.js";
 import Dashboard from "../components/Dashboard.jsx";
@@ -12,7 +12,7 @@ import AddExpenseForm from "../components/AddExpenseForm.jsx";
 import DeleteAlert from "../components/DeleteAlert.jsx";
 
 const Expense = () => {
-    useUser();
+    UseUser();
     const navigate = useNavigate();
     const [expenseData, setExpenseData] = useState([]);
     const [categories, setCategories] = useState([]); // New state for expense categories

@@ -1,6 +1,6 @@
 import Dashboard from "../components/Dashboard.jsx";
 
-import useUser from "../hooks/useUser.jsx";
+import UseUser from "../hooks/UseUser.jsx";
 
 import InfoCard from "../components/InfoCard.jsx";
 import {Coins, Wallet, WalletCards} from "lucide-react";
@@ -15,7 +15,7 @@ import FinanceOverview from "../components/FinanceOverview.jsx";
 import Transactions from "../components/Transactions.jsx";
 
 const Home = () => {
-    useUser();
+    UseUser();
 
     const navigate = useNavigate();
     const [dashboardData, setDashboardData] = useState(null);

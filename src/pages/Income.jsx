@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Dashboard from '../components/Dashboard.jsx';
-import UseUser from '../hooks/useUser.jsx';
+import UseUser from "../hooks/UseUser.jsx";
 import axiosConfig from '../util/axiosConfig.js';
 import { API_ENDPOINTS } from '../util/apiEndpoints.js';
 import toast from 'react-hot-toast';
